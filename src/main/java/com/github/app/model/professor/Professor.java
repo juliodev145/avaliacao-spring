@@ -15,6 +15,7 @@ import lombok.*;
 public class Professor {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //erro 3 - não tinha o auto-incremento
     private Integer id;
 
     private String nome;

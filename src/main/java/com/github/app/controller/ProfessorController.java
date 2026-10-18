@@ -16,7 +16,7 @@ import com.github.app.model.professor.ProfessorRepository;
 import jakarta.transaction.Transactional;
 
 @RestController
-@RequestMapping("/professor")
+@RequestMapping("/professores") //2o erro (professor -> professores)
 public class ProfessorController {
 
     @Autowired
