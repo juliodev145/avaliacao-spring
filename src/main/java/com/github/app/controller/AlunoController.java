@@ -44,6 +44,7 @@ public class AlunoController {
     }
 
     @PutMapping
+    @Transactional //erro 6 - não estava atualizando pois não tinha a trnasacao
     public void atualizar(@RequestBody DadosAtualizacaoAluno dados) {
         var aluno = repository.getReferenceById(dados.id());
         aluno.atualizarInformacoes(dados);
