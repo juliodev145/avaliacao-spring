@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotNull;
 public record DadosCadastroMatricula(
 
     @NotNull
-    Integer idAluno,
+    Integer alunoId, //erro 8 - IdAluno -> alunoId
 
     @NotNull
     Integer professorId,
